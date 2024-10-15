@@ -1,0 +1,102 @@
+.app {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    gap: 8px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar-title {
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.notes-list {
+  width: 100%;
+  max-width: 800px;
+}
+
+.note-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note-item h3 {
+  margin: 0;
+}
+
+.item-date {
+  color: grey;
+}
+
+.toggle-archive-button {
+  background-color: cornflowerblue;
+}
+
+.delete-button {
+  background-color: firebrick;
+}
+
+.add-button {
+  background-color: forestgreen;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+}
