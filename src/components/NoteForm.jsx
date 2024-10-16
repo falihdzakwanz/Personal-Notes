@@ -15,7 +15,7 @@ class NoteForm extends React.Component {
     }
 
     titleChangeEventHandler(event) {
-        const newTitle = event.target.value.slice(0, this.state.maxTitleLength);
+        const newTitle = event.target.value.slice(0, 50);
         this.setState(() => {
             return {
                 title: newTitle,
